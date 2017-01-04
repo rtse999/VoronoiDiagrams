@@ -1,0 +1,9 @@
+Location, Address, Latitude, Longitude
+Botany, 9-11 Green Street BANKSMEADOW NSW 2019, -33.943572, 151.214823                 
+Brookvale, 28B William Street BROOKVALE NSW 2100, -33.768431, 151.272085
+Lansvale, 66-70 Chadderton Street LANSVALE NSW 2166, -33.893405, 150.957500                             
+Mascot, 33-35 O’Riordan Street ALEXANDRIA NSW 2015, -33.910773, 151.197592
+Peakhurst, 26 Norman Street PEAKHURST NSW 2210, -33.964489, 151.064887
+Seven Hills, 26A Powers Road SEVEN HILLS NSW 2147, -33.773554, 150.952051                   
+Silverwater, 48A Egerton Street SILVERWATER NSW 2128, -33.833599, 151.044844                            
+St Marys, 118 Dunheved Circuit ST MARYS NSW 2760, -33.745626, 150.773353
