@@ -15,7 +15,7 @@
 library(ggplot2)
 library(deldir)
 # Important: Install the latest version of library(ggmap) from 
-# https://github.com/dkahle/ggmap rather than CRAN
+# https://github.com/dkahle/ggmap rather than CRAN (which is 2 versions behind)
 library(ggmap)
 
 # Create location data
