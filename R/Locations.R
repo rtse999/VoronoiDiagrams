@@ -15,6 +15,9 @@ library(ggmap)
 options(digits=16)
 locations <- read.csv("~/Dropbox/Analysis/VoronoiDiagrams/Data/Locations.txt")
 
+# Create Voronoi line segments
+voronoi <- deldir(locations$Longitude, locations$Latitude)
+
 # Get Google map of Sydney
 sydneyMap <- ggmap(get_googlemap(center=c(lon=151.0011, lat=-33.8150)))
 
@@ -26,18 +29,14 @@ sydneyMap +
   data = voronoi$dirsgs,
   linetype = 1,
   color= "#FFB958") +
-  
   #Plot the points
-  geom_point(data=locations, aes(x=Longitude,y=Latitude), col="#FF0000")
+  geom_point(data=locations, aes(x=Longitude,y=Latitude), size=3, col="#FF0000")
 
 
 
 # --- --- ---
 # Original code
 # --- --- ---
-
-# Create Voronoi line segments
-voronoi <- deldir(locations$Longitude, locations$Latitude)
 
 # Plotting the Voronoi Diagram
 sydneyMap + ggplot(data=locations, aes(x=Longitude,y=Latitude)) +
