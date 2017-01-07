@@ -1,5 +1,10 @@
 #
-# Creating Voronoi Diagrams with ggplot (http://letstalkdata.com/2014/05/creating-voronoi-diagrams-with-ggplot/)
+# Plotting Sydney SMART locations with Voronoi Diagrams & ggplot 
+#
+# References:
+# http://letstalkdata.com/2014/05/creating-voronoi-diagrams-with-ggplot/
+# https://blog.dominodatalab.com/geographic-visualization-with-rs-ggmaps/
+# https://github.com/dkahle/ggmap
 #
 # Location: https://github.com/rtse999/VoronoiDiagrams.git
 # First created: 10:45 - Wednesday 4 January 2017
@@ -9,6 +14,8 @@
 # Libraries
 library(ggplot2)
 library(deldir)
+# Important: Install the latest version of library(ggmap) from 
+# https://github.com/dkahle/ggmap rather than CRAN
 library(ggmap)
 
 # Create location data
