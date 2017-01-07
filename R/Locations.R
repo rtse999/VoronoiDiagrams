@@ -26,7 +26,7 @@ locations <- read.csv("~/Dropbox/Analysis/VoronoiDiagrams/Data/Locations.txt")
 voronoi <- deldir(locations$Longitude, locations$Latitude)
 
 # Get Google map of Sydney
-sydneyMap <- ggmap(get_googlemap(center=c(lon=151.0011, lat=-33.8150)))
+sydneyMap <- ggmap(get_googlemap(center=c(lon=151.0011, lat=-33.8150), zoom=10))
 
 sydneyMap + 
   #Plot the voronoi lines
