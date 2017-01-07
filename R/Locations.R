@@ -3,7 +3,7 @@
 #
 # Location: https://github.com/rtse999/VoronoiDiagrams.git
 # First created: 10:45 - Wednesday 4 January 2017
-# Last modified: 15:48 - Wednesday 4 January 2017
+# Last modified: 17:23 - Saturday 7 January 2017
 #
 
 # Libraries
@@ -31,46 +31,4 @@ sydneyMap +
   color= "#FFB958") +
   #Plot the points
   geom_point(data=locations, aes(x=Longitude,y=Latitude), size=3, col="#FF0000")
-
-
-
-# --- --- ---
-# Original code
-# --- --- ---
-
-# Plotting the Voronoi Diagram
-sydneyMap + ggplot(data=locations, aes(x=Longitude,y=Latitude)) +
-  #Plot the voronoi lines
-  geom_segment(
-    aes(x = x1, y = y1, xend = x2, yend = y2),
-    size = 2,
-    data = voronoi$dirsgs,
-    linetype = 1,
-    color= "#FFB958") + 
-  #Plot the points
-geom_point(
-    fill=rgb(70,130,180,255,maxColorValue=255),
-    pch=21,
-    size = 4,
-    color="#333333")
-
-# Plotting the Delaunay trianguLatitudeion
-ggplot(data=locations, aes(x=Longitude,y=Latitude)) +
-  #Plot the voronoi lines
-  geom_segment(
-    aes(x = x1, y = y1, xend = x2, yend = y2),
-    size = 2,
-    data = voronoi$delsgs,
-    linetype = 1,
-    color= "#FFB958") + 
-  #Plot the points
-  geom_point(
-    fill=rgb(70,130,180,255,maxColorValue=255),
-    pch=21,
-    size = 4,
-    color="#333333")
-
-
-
-
 
